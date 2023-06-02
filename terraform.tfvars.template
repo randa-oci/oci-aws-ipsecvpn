@@ -1,0 +1,19 @@
+# ------ Oracle Variables
+region="us-ashburn-1"
+user_ocid="ocid1.user.oc1..XXXXXXXXXXXXXXX"
+tenancy_ocid="ocid1.tenancy.oc1..XXXXXXXXXXXXXXX"
+compartment_ocid="ocid1.compartment.oc1..XXXXXXXXXXXXXXX"
+fingerprint=""
+ssh_public_key="ssh-rsa XXXXXXXXXXXXXXX"
+private_key_path= "XXXXXXXXXXXXXXX.pem"
+IaC_VCN_CIDR="X.X.X.X/16"
+IaC_VCN_subnet="X.X.X.X/24"
+
+# ------ AWS Variables
+aws_region="us-east-1"
+IaC_VPC_CIDR="Y.Y.Y.Y/16"
+IaC_VPC_subnet="Y.Y.Y.Y/24"
+
+# ------ VPN Variables
+shared_secret_1="XXX............................." # 32 character recommended, must not contain "." or "_"
+shared_secret_2="YYY............................." # 32 character recommended, must not contain "." or "_"
