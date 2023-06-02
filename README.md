@@ -3,8 +3,8 @@ This repository configures the following:
 - Site to Site VPN between OCI and AWS using the public Internet as underlay
 - AWS: CGW, VPN Gateway, VPC, Subnet, Route Table, NACL and NSG
 - OCI: CPE, DRG, VCN, IGW, Subnet, Route Table and security list.
-- ICMP and SSH is enabled between AWS and OCI. 
- -SSH is enabled from the administrator public IP to OCI. 
+- ICMP and SSH is enabled between AWS and OCI.
+- SSH is enabled from the administrator public IP to OCI. 
 
 Steps for implementing the configuration:
 
