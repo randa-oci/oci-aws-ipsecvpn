@@ -14,9 +14,9 @@ Steps for implementing the configuration:
 
 Create the Resources using the following commands:
 
-terraform init
-terraform plan
-terraform apply
+- terraform init
+- terraform plan
+- terraform apply
 
 After successfully performing the "terraform apply" the administrator must connect to the AWS Portal and modify the Site-to-Site VPN selecting the New IaC CGW".
 This will be the last step for completing the connection.
@@ -28,5 +28,5 @@ For destroying the deployment first modify the AWS VPN to use the "IaC_CGW" inst
 
 Use the following command for destroying the deployment:
 
-terraform destroy
+- terraform destroy
 
