@@ -26,7 +26,7 @@ When creating the EC2 instance in AWS be sure to select the IaC VPC and NSG.
 
 For destroying the deployment first modify the AWS VPN to use the "IaC_CGW" instead of the "New_IaC_CGW".
 
-Use the following command for destroying the deployment:
+Use the following command to destroy the deployment:
 
 - terraform destroy
 
