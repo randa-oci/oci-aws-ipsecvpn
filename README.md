@@ -1,9 +1,8 @@
 # OCI to AWS Site-to-Site VPN
 
-This repository allows you to deploy a Site-to-Site VPN between an OCI DRG and an AWS VPN Gateway. 
+This repository allows you to deploy a Site-to-Site VPN between OCI DRG and AWS VPN Gateway. 
 It configures the following:
 
-- Site to Site VPN between OCI and AWS using the public Internet as underlay
 - AWS: CGW, VPN Gateway, VPC, Subnet, Route Table, NACL and NSG
 - OCI: CPE, DRG, VCN, IGW, Subnet, Route Table and security list.
 - ICMP and SSH is enabled between AWS and OCI.
