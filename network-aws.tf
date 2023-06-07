@@ -107,7 +107,6 @@ resource "aws_route" "IaC_Route_to_OCI" {
   route_table_id         = aws_route_table.IaC_route_table.id
   destination_cidr_block = var.IaC_VCN_CIDR
   gateway_id             = aws_vpn_gateway.IaC_vpn_gateway.id
-# gateway_id             = aws_ec2_transit_gateway.IaC_TGW.id
 }
 
 # Associate route table to IaC Subnet
@@ -124,19 +123,6 @@ resource "aws_vpn_gateway" "IaC_vpn_gateway" {
   }
 }
 
-# Un-hash if using TGW intead of VPN GW
-#resource "aws_ec2_transit_gateway" "IaC_TGW" {
-#  transit_gateway_id       = aws_ec2_transit_gateway.IaC_TGW.id
-#  vpc_id                   = aws_vpc.IaC_VPC.id
-#  transit_gateway_default_route_table_association = true
-#  transit_gateway_default_route_table_propagation = true
-#  description = "TGW to OCI"
-#  tags = {
-#    Name = "IaC-TGW"
-#  }
-#}
-
-
 # Attach the VPC to the VPN gateway
 resource "aws_vpn_gateway_attachment" "IaC_vpn_gateway_attachment" {
   vpc_id          = aws_vpc.IaC_VPC.id
@@ -147,7 +133,6 @@ resource "aws_vpn_gateway_attachment" "IaC_vpn_gateway_attachment" {
 resource "aws_vpn_connection" "S2S_VPN_to_OCI" {
   customer_gateway_id    = aws_customer_gateway.IaC_CGW.id
   vpn_gateway_id         = aws_vpn_gateway.IaC_vpn_gateway.id
-# transit_gateway_id     = aws_ec2_transit_gateway.IaC_TGW.id  
   type                   = "ipsec.1"
   tunnel1_inside_cidr    = "169.254.150.224/30"
   tunnel2_inside_cidr    = "169.254.150.228/30"
