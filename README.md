@@ -15,7 +15,9 @@ It configures the following:
 
 ## Requirements
 
-
+- You have an active Oracle Cloud Infrastructure Account.
+- You have an active subscription to AWS
+- Permission to manage the following types of resources in your Oracle Cloud Infrastructure tenancy and AWS: vcns, internet-gateways, route-tables, security-lists, subnets, VPCs, subnets, Roue Tables, NACLs, VPN Gateway.
 
 ## Steps
 
