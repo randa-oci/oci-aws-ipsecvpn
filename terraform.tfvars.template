@@ -1,11 +1,13 @@
 # ------ Oracle Variables
-region="us-ashburn-1"
 user_ocid="ocid1.user.oc1..XXXXXXXXXXXXXXX"
 tenancy_ocid="ocid1.tenancy.oc1..XXXXXXXXXXXXXXX"
 compartment_ocid="ocid1.compartment.oc1..XXXXXXXXXXXXXXX"
-fingerprint=""
+fingerprint="xx:xx:yy:yy"
 ssh_public_key="ssh-rsa XXXXXXXXXXXXXXX"
 private_key_path= "XXXXXXXXXXXXXXX.pem"
+
+# ------ Oracle Variables
+region="us-ashburn-1"
 IaC_VCN_CIDR="X.X.X.X/16"
 IaC_VCN_subnet="X.X.X.X/24"
 
