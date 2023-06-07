@@ -16,7 +16,7 @@ It configures the following:
 
 - An active Oracle Cloud Infrastructure Account.
 - An active AWS account
-- API Key Authentication for OCI Terraform provider, https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm
+- API Key Authentication for OCI Terraform provider -> https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm
 - Terraform
 - Permission to manage the following types of resources in your Oracle Cloud Infrastructure tenancy and AWS: vcns, internet-gateways, route-tables, security-lists, subnets, VPCs, subnets, Roue Tables, NACLs, VPN Gateway.
 
