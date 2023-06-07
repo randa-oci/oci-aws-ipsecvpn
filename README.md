@@ -1,4 +1,7 @@
-This repository configures the following:
+# OCI to AWS Site-to-Site VPN
+
+This repository allows you to deploy a Site-to-Site VPN between an OCI DRG and an AWS VPN Gateway. 
+It configures the following:
 
 - Site to Site VPN between OCI and AWS using the public Internet as underlay
 - AWS: CGW, VPN Gateway, VPC, Subnet, Route Table, NACL and NSG
@@ -6,17 +9,27 @@ This repository configures the following:
 - ICMP and SSH is enabled between AWS and OCI.
 - SSH is enabled from the administrator public IP to OCI. 
 
-Steps for implementing the configuration:
+## Architecture diagram
 
-- Duplicate the terraform.tfvars.template and rename to terraform.tfvars
-- In the new terraform tfvars file complete the "Oracle Variables", "AWS Variables" and "VPN Variables"
+## Requirements
+
+
+
+## Steps
+
+- Duplicate the "terraform.tfvars.template" file and rename it to "terraform.tfvars"
+- In the new "terraform.tfvars" file complete the "OCI Tenancy Credentials", "Oracle Variables", "AWS Variables" and "VPN Variables"
 - Authenticate to AWS. For simplicity it is recommended to do it via the AWS Toolkit (requires installation)
+
+## Deployment
 
 Create the Resources using the following commands:
 
-- terraform init
-- terraform plan
-- terraform apply
+```bash
+terraform init
+terraform plan
+terraform apply
+```
 
 After successfully performing the "terraform apply" the administrator must connect to the AWS Portal and modify the Site-to-Site VPN selecting the New IaC CGW".
 This will be the last step for completing the connection.
@@ -28,5 +41,6 @@ For destroying the deployment first modify the AWS VPN to use the "IaC_CGW" inst
 
 Use the following command to destroy the deployment:
 
-- terraform destroy
-
+```bash
+terraform destroy
+```
