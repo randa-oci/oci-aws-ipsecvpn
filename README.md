@@ -11,7 +11,7 @@ It configures the following:
 
 ## Architecture diagram
 
-![](./images/oci-aws-S2SVPN.png)
+![](./oci-aws-S2SVPN.png)
 
 ## Requirements
 
