@@ -52,4 +52,4 @@ terraform destroy
 ## Acknowledgements
 
 * **Author** - [Ricardo Anda](https://www.linkedin.com/in/ricardoanda/), Oracle
-* **Last Updated Date** - June 8, 2023
+* **Last Updated** - June 8, 2023
