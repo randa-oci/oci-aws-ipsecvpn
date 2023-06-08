@@ -49,3 +49,7 @@ Use the following command to destroy the deployment:
 ```bash
 terraform destroy
 ```
+## Acknowledgements
+
+* **Author** - [Ricardo Anda](https://www.linkedin.com/in/ricardoanda/), Oracle
+* **Last Updated Date** - June 8, 2023
