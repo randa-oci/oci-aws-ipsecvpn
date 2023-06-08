@@ -6,7 +6,9 @@ It configures the following:
 - AWS: CGW, VPN Gateway, VPC, Subnet, Route Table, NACL and NSG
 - OCI: CPE, DRG, VCN, IGW, Subnet, Route Table and security list.
 - ICMP and SSH is enabled between AWS and OCI.
-- SSH is enabled from the administrator public IP to OCI. 
+- SSH is enabled from the administrator public IP to OCI.
+
+https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/vpn_to_aws.htm
 
 ## Architecture diagram
 
