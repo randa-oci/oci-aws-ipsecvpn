@@ -13,6 +13,7 @@ IaC_VCN_subnet="X.X.X.X/24"
 
 # ------ AWS Variables
 aws_region="yy-xxxx-1"
+aws_profile= "XXXXXXXX"
 IaC_VPC_CIDR="Y.Y.Y.Y/16"
 IaC_VPC_subnet="Y.Y.Y.Y/24"
 
