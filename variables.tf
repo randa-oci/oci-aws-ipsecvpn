@@ -94,6 +94,10 @@ variable "aws_region" {
   description = "AWS Region Name"
 }
 
+variable "aws_profile" {
+  description = "AWS Profile"
+}
+
 variable "IaC_VPC_CIDR" {
   description = "AWS VPC CIDR"
 }
