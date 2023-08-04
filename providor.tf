@@ -9,6 +9,7 @@ terraform {
 # ------ Initialize AWS Terraform provider
 provider "aws" {
   region = var.aws_region
+  profile = var.aws_profile
 }
 
 # ------ Initialize Oracle Terraform provider
